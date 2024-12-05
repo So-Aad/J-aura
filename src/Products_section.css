@@ -1,0 +1,28 @@
+.description{
+    padding: 20px;
+    margin:20px;
+    text-align: center;
+}
+.jaura{
+    font-size: 2rem;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+.jaura span{
+    color:#bcae97;
+    font-family: "Great vibes";
+
+}
+.proTitle{
+    font-size:1.8rem;
+    margin-bottom: 15px;
+    color:#bcae97;
+}
+.para{
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin:0 auto;
+    padding:0 15px;
+   
+}
