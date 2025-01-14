@@ -1,0 +1,122 @@
+/* General Styling */
+.new-collection-section {
+    padding: 4rem 2rem;
+    background-color: #f9f5f0; /* Light elegant background */
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* Hero Banner */
+  .hero-banner {
+    background: linear-gradient(to right, #d3c0b7, #fff5f1);
+    padding: 3rem 2rem;
+    border-radius: 10px;
+    margin-bottom: 3rem;
+  }
+  
+  .hero-title {
+    font-size: 2.5rem;
+    color: #5a4036;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.2rem;
+    color: #7d6255;
+    margin-bottom: 1.5rem;
+  }
+  
+  .shop-now {
+    padding: 0.8rem 2rem;
+    border: none;
+    font-size: 1.2rem;
+    color: #7d6255;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+   
+   
+  }
+  
+  
+  
+  /* Collection Grid */
+  .collection-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+  
+  .collection-item {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .collection-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .image-container {
+    position: relative;
+  }
+  
+  .product-image {
+    width: 100%; /* Make the image take up the full width of the container */
+    height: 200px; /* Set a fixed height for all images */
+    object-fit: cover; /* Ensures the image scales without distortion */
+    display: block; /* Removes any inline spacing issues */
+    border-radius: 10px 10px 0 0; /* Optional: Rounded corners on the top */
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+  }
+  
+  .image-container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .view-details-button {
+    background-color: white;
+    color: #5a4036;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .view-details-button:hover {
+    background-color: #5a4036;
+    color: white;
+  }
+  
+  /* Product Info */
+  .product-name {
+    font-size: 1.2rem;
+    color: #5a4036;
+    font-weight: 600;
+    margin: 1rem 0 0.5rem;
+  }
+  
+  .product-price {
+    font-size: 1rem;
+    color: #7d6255;
+    margin-bottom: 1.5rem;
+  }
+  

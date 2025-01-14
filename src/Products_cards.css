@@ -1,0 +1,51 @@
+
+ .card{
+  /* border:1px solid #000000; */
+  transition: transform 0.3s ease;
+  cursor: pointer;
+
+ } 
+ .card:hover {
+  transform: translateY(-20px);
+}
+ 
+ .card img{
+  border-bottom: 1px solid #9f8e75;
+ }
+ .card-text{
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  color: #9f8e75;
+  padding:0;
+  margin: 0;
+
+ }
+ .card-price{
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  padding:0;
+  margin: 0;
+ }
+ .BtnContainer{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+ 
+ }
+ .MoreProductBtn{
+  background-color: transparent;
+  border: 2px solid #9f8e75;
+  color: #9f8e75;
+  position:relative;
+  padding: 10px 20px;
+  margin-top:40px;
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 2px; /* Increases spacing by 2px */
+  font-weight:20px;
+ }
+ .MoreProductBtn:hover{
+  background-color: #9f8e75;
+  color:white;
+ }
+

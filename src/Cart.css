@@ -1,0 +1,151 @@
+/* Main container for the cart */
+.cart-container {
+    position: fixed;
+    top: 0;
+    right: -400px; /* Initially hidden */
+    width: 300px;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+    padding: 15px;
+    overflow-y: auto;
+  }
+  
+  /* When the cart is visible */
+  .cart-container.show-cart {
+    right: 0;
+  }
+  
+  /* Cart header styles */
+  .cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .cart-header h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .cart-header .btn-close {
+    border: none;
+    background: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  /* Cart body styles */
+  .cart-body {
+    padding: 10px 0;
+  }
+  
+  .cart-body p {
+    text-align: center;
+    color: #888;
+    margin-top: 20px;
+  }
+  
+  /* List of cart items */
+  .cart-items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .cart-item:last-child {
+    border-bottom: none;
+  }
+  
+  /* Product name and price */
+  .cart-item h6 {
+    font-size: 1rem;
+    margin: 0;
+  }
+  
+  .cart-item p {
+    color: #555;
+    margin: 0;
+  }
+  
+  /* Quantity controls */
+  .quantity-controls {
+    display: flex;
+    align-items: center;
+  }
+  
+  .quantity-controls button {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    background: #f9f9f9;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .quantity-controls button:hover {
+    background-color: #e2e2e2;
+  }
+  
+  .quantity-controls button:disabled {
+    background-color: #f5f5f5;
+    cursor: not-allowed;
+  }
+  
+  .quantity-controls span {
+    margin: 0 8px;
+    font-size: 1rem;
+  }
+  
+  /* Cart icon badge styles (in Header.js) */
+  .cart-icon {
+    position: relative;
+    border: none;
+    background: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .cart-icon .badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #dc3545;
+    color: #fff;
+    font-size: 0.8rem;
+    padding: 4px 6px;
+    border-radius: 50%;
+  }
+  
+  /* Scrollbar styles */
+  .cart-container::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .cart-container::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 3px;
+  }
+  
+  .cart-container::-webkit-scrollbar-thumb:hover {
+    background-color: #bbb;
+  }
+  
