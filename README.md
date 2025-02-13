@@ -63,8 +63,21 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Jewelry Store - E-commerce Frontend ; J-aura
 
-### `npm run build` fails to minify
+This is a React-based front-end for an e-commerce jewelry store. It provides a modern, responsive, and interactive shopping experience for customers looking to purchase jewelry online.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Features
+
+Home page with featured jewelry collections
+
+Product listing with search and filtering options
+
+Product details page with high-quality images and descriptions
+
+Shopping cart functionality
+
+Responsive design for mobile and desktop
+
+
+
