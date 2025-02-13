@@ -79,5 +79,9 @@ Shopping cart functionality
 
 Responsive design for mobile and desktop
 
+🚀 **Live Demo:** [Click here to view](https://j-aura.netlify.app/)
+
+
+
 
 
