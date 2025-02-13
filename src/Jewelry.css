@@ -1,0 +1,109 @@
+.product-titleZ {
+  font-size: 1rem;
+  text-align: center;
+ 
+  color: #836c58;
+  font-family: "Oswald", sans-serif;
+  font-weight: lighter;
+  
+}
+
+.product-priceZ {
+  font-size: 1rem;
+  text-align: center;
+  font-weight: bold;
+  color: #352314;
+ 
+}
+
+.jewelry-img {
+  width: 100%;
+  height: auto;
+
+}
+
+
+@media (max-width: 768px) {
+  .jewelry-img {
+    width: 400px;
+    height: auto;
+  }
+
+  .product-priceZ {
+    text-align: start;
+  }
+
+  .product-titleZ {
+    text-align: start;
+  }
+}
+
+.pic {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1200px;
+  height: 300px;
+  padding: 3rem 2rem;
+  border-radius: 10px;
+  margin-bottom: 3rem;
+  position: relative;
+  /* Necessary for the pseudo-element */
+  overflow: hidden;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: float 2s ease-in-out infinite;
+
+}
+
+
+
+
+.pic a {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  color: white;
+  text-decoration: none;
+  font-size: 100px;
+  letter-spacing: 3px;
+  font-weight: lighter;
+}
+
+.pic a span {
+  color: #352314;
+}
+
+.overlaySec {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease;
+}
+
+.cardD:hover .overlaySec {
+  opacity: 1;
+}
+
+.view-details-btn {
+  background-color: white;
+  color: #5a4036;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.view-details-btn:hover {
+  background-color: #5a4036;
+  color: white;
+}

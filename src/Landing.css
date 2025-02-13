@@ -1,0 +1,255 @@
+
+body{
+  overflow-x: hidden;
+  
+}
+.navbar {
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 0px 5px;
+  margin: 5px;
+  /* margin-left: 25px; */
+ 
+  width: 99%;
+  background-color: white;
+ 
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color:black;
+ 
+}
+.navbar-brand span{
+
+/* font-family: 'Playwrite AU TAS'; */
+font-family: "Great Vibes", cursive;
+color:#bcae97;
+}
+
+.nav-link {
+  margin: 5px 10px;
+  color: black;
+}
+.nav-link:hover{
+ color:#bcae97;
+ /* text-decoration: underline  black ; */
+
+}
+
+.search-input {
+  border-radius: 30px;
+  padding: 5px 10px;
+  margin: 5px;
+  border: 1px solid  black;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+}
+
+.search-input input {
+  border: none;
+  outline: none;
+  margin-left: 15px;
+}
+.search-input .rech{
+  color:#bcae97;
+}
+.cart-icon {
+  font-size: 1.2rem;
+  margin-left: 20px;
+  color:  #bcae97;
+  transition: transform 0.3s ease;
+  background-color: transparent;
+  border:none;
+  cursor: pointer;
+}
+.cart-icon:hover{
+  color: tomato;
+}
+
+.cart-icon i {
+  transition: inherit;
+}
+
+.cont {
+  margin: 10px;
+  margin-left: 10px;
+  position: relative;
+}
+
+.boxes-wrapper {
+  display: flex;
+  gap: 10px;
+  max-width: 650px;
+  margin-bottom: 20px;
+}
+
+.box1 {
+  background-color: #bcae97;
+  width: 100%;
+  max-width: 650px;
+  min-height: 390px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* Ensure h1 is at the top and i is at the bottom */
+  padding: 20px;
+  /* Add padding for spacing inside the box */
+  transition: transform 0.3s ease;
+}
+
+.box1 h1 {
+  color:white;
+  
+  font-family: "Oswald", sans-serif;
+  font-weight:700; 
+  padding-top:20px ;
+  margin: 0;
+  /* Remove default margin */
+  font-size: clamp(20px, 4vw, 35px);
+  animation: fall 1s ease-in-out forwards;
+  opacity: 0;
+}
+
+.box1 i {
+ 
+  font-weight: 600;
+  color: #352314;
+  margin: 0;
+  text-decoration: underline black;
+  /* Remove default margin */
+  font-size: clamp(16px, 4vw, 10px);
+  animation: fall 1s ease-in-out forwards;
+  opacity: 0;
+}
+@keyframes fall {
+  0% {
+    transform: translateY(-100px); /* Start above the viewport */
+    opacity: 0; /* Invisible */
+  }
+  50% {
+    opacity: 1; /* Gradually become visible */
+  }
+  100% {
+    transform: translateY(0); /* Reach final position */
+    opacity: 1;
+  }
+}
+
+@media (max-width: 576px) {
+  .box1 {
+      margin: 30px;
+      padding: 15px;
+     
+      /* Adjust padding for smaller screens */
+  }
+}
+
+.box2 {
+  /* background-image: url("images/blackB.jpg"); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  max-width: 320px;
+  min-height: 160px;
+  border-radius: 20px;
+  margin: 0;
+  transition: transform 0.3s ease;
+  text-decoration: none;
+  color: #352314;
+}
+
+.box3 {
+  /* background-image: url("images/er.jpg"); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  max-width: 320px;
+  min-height: 160px;
+  border-radius: 20px;
+  margin: 0;
+  transition: transform 0.3s ease;
+ 
+}
+
+.box4 {
+  /* background-image: url("images/ring-dream-natifi.jpg"); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 650px;
+  min-height: 560px;
+  width: 100%;
+  border-radius: 20px;
+  position: absolute;
+  left: calc(100% - 675px);
+  top:0px;
+ 
+}
+
+@media (max-width: 1200px) {
+  .box4 {
+      position: relative;
+      left: auto;
+      top: auto;
+      margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .boxes-wrapper {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+  }
+
+  .box2,
+  .box3 {
+      max-width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .box1,
+  .box2,
+  .box3,
+  .box4 {
+      margin: 5px auto;
+      
+      max-width: 100%;
+  }
+}
+
+.box4:hover,
+.box3:hover,
+.box2:hover,
+.box1:hover {
+  transform: translateY(-5px);
+}
+
+.box2 .title{
+  color:#352314;
+  text-decoration: none;
+  position:absolute;
+  bottom:5px;
+  margin:5px;
+  padding:10px 5px;
+  font-family: "Oswald", sans-serif;
+  
+}
+.box3 .title{
+  color:#352314;
+  text-decoration:none;
+  font-family: "Oswald", sans-serif;
+  position:absolute;
+  bottom:5px;
+  margin:5px;
+  padding:10px 5px;
+}

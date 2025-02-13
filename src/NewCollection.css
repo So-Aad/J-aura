@@ -1,0 +1,64 @@
+.image-container {
+    width: 100%;
+    height: 450px; /* Adjust height as needed */
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease-in-out;
+   /* Optional: to give rounded corners */
+  }
+  .image-container:active {
+    transform: scale(1.5); /* Adjust the zoom level */
+  }
+  
+.cadre {
+    padding: 10px;
+  }
+.forText{
+    background-color:#352314 ;
+    width: 100%;
+    height: 450px; 
+    padding: 10px;
+  }
+.forText{
+    background-color: #352314;
+    width: 100%;
+    height: 450px; 
+    padding: 10px;
+}
+.parag{
+  color: #352314;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 4px;
+
+
+}
+.title{
+    color:white;
+    letter-spacing: 10px;
+}
+h6{
+  text-align: center;
+  color:#352314;
+  font-weight: bold;
+  
+}
+.par{
+    color:white;
+}
+.NotifyBtn{
+    background-color: rgb(248, 230, 206);
+    color:#352314;
+    width: 50%;
+    height: auto;
+    font-weight: bold;
+    border: none;
+    padding: 5px;
+    margin-top: 20px;
+    
+}
+.NotifyBtn:hover{
+    border:3px solid black;
+    color:#352314;
+    background-color: white;
+  }
