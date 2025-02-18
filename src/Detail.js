@@ -30,7 +30,7 @@ function Detail({ products, addToCart }) {
           The gentle feminine beauty and charm of the movements celebrate the infinite perfection of nature and its superiority.
         </p>
         <p className="detail-availability"><strong>Availability:</strong> In stock</p>
-        <p className="detail-price">Price: {product.price}</p>
+        <p className="detail-price">Price: {product.price}Dh</p>
         <button className="add-to-cart" onClick={handleAddToCart}>
           Add to Cart
         </button>
