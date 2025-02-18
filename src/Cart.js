@@ -23,7 +23,7 @@ function Cart({ cart, updateQuantity, removeFromCart }) {
               <img src={product.picture} alt={product.title} className="cart-item-img" />
               <div className="cart-item-details">
                 <p>{product.title}</p>
-                <p>Price: ${product.price}</p>
+                <p>Price: {product.price}Dh</p>
                 <p>Quantity: {product.quantity}</p>
                 <div className="quantity-controls">
                   <button onClick={() => updateQuantity(product.id, "increase")}><FaPlus /></button>
@@ -31,11 +31,11 @@ function Cart({ cart, updateQuantity, removeFromCart }) {
                   <button onClick={() => removeFromCart(product.id)}><FaTrash /></button>
                 </div>
               </div>
-              <p>Total: ${product.price * product.quantity}</p>
+              <p>Total: {product.price * product.quantity}Dh</p>
             </div>
           ))}
           <div className="cart-total">
-            <h3>Total: ${calculateTotal()}</h3>
+            <h3>Total: {calculateTotal()}Dh</h3>
           </div>
         </div>
       )}
