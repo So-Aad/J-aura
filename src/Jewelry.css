@@ -1,11 +1,10 @@
+/* Product Titles & Prices */
 .product-titleZ {
   font-size: 1rem;
   text-align: center;
- 
   color: #836c58;
   font-family: "Oswald", sans-serif;
   font-weight: lighter;
-  
 }
 
 .product-priceZ {
@@ -13,97 +12,46 @@
   text-align: center;
   font-weight: bold;
   color: #352314;
- 
 }
 
+/* Jewelry Image Styling */
 .jewelry-img {
   width: 100%;
   height: auto;
-
+  max-width: 250px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 12px; /* Rounded corners */
+  padding: 8px; /* Adds some spacing */
+  background: #f8f3f0; /* Light background */
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-
-@media (max-width: 768px) {
-  .jewelry-img {
-    width: 400px;
-    height: auto;
-  }
-
-  .product-priceZ {
-    text-align: start;
-  }
-
-  .product-titleZ {
-    text-align: start;
-  }
+/* Hover Effect */
+.jewelry-img:hover {
+  transform: scale(1.05); /* Slight zoom */
+  box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
 }
 
-.pic {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 1200px;
-  height: 300px;
-  padding: 3rem 2rem;
-  border-radius: 10px;
-  margin-bottom: 3rem;
-  position: relative;
-  /* Necessary for the pseudo-element */
+/* Card Styling */
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
   overflow: hidden;
-  z-index: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  animation: float 2s ease-in-out infinite;
-
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-
-
-
-.pic a {
-  text-align: center;
-  font-family: "Oswald", sans-serif;
-  color: white;
-  text-decoration: none;
-  font-size: 100px;
-  letter-spacing: 3px;
-  font-weight: lighter;
+/* Card Hover Effect */
+.card:hover {
+  transform: translateY(-5px); /* Lift effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-.pic a span {
-  color: #352314;
-}
-
-.overlaySec {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: transparent;
-  opacity: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: opacity 0.3s ease;
-}
-
-.cardD:hover .overlaySec {
-  opacity: 1;
-}
-
-.view-details-btn {
-  background-color: white;
-  color: #5a4036;
-  padding: 0.8rem 1.5rem;
-  border: none;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.view-details-btn:hover {
-  background-color: #5a4036;
-  color: white;
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .product-titleZ,
+  .product-priceZ {
+    text-align: left;
+  }
 }
