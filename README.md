@@ -81,7 +81,7 @@ Responsive design for mobile and desktop
 
 ![jaura1](https://github.com/user-attachments/assets/a696bad1-0e2f-4fff-9c52-c17295877fa5)
 
-![jaura2](https://github.com/user-attachments/assets/023b496d-1502-4f40-9b9d-3d3bb389c22b)![jaura3](https://github.com/user-attachments/assets/c7428ccd-5250-4b9a-b7b2-7594d0207f41)![jaura4](https://github.com/user-attachments/assets/fb9724e4-ec75-46f6-bf19-1e2b8d7cb56c)
+![jaura2](https://github.com/user-attachments/assets/023b496d-1502-4f40-9b9d-3d3bb389c22b) ![jaura3](https://github.com/user-attachments/assets/c7428ccd-5250-4b9a-b7b2-7594d0207f41) ![jaura4](https://github.com/user-attachments/assets/fb9724e4-ec75-46f6-bf19-1e2b8d7cb56c)
 
 
 
